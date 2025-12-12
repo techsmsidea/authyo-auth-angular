@@ -1,0 +1,56 @@
+{
+  "name": "@authyo/auth-angular",
+  "version": "1.0.1",
+  "description": "Angular wrapper for the Authyo passwordless SDK.",
+  "license": "MIT",
+  "author": "Authyo",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist"
+  },
+  "peerDependencies": {
+    "@angular/core": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "rxjs": "^7.0.0",
+    "@authyo/auth-js": "^1.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authyo/auth-angular"
+  },
+  "bugs": {
+    "url": "https://github.com/authyo/auth-angular/issues"
+  },
+  "homepage": "https://authyo.io/docs",
+  "keywords": [
+    "authyo",
+    "authentication",
+    "auth",
+    "passwordless",
+    "otp",
+    "login",
+    "webauthn",
+    "angular",
+    "identity",
+    "security"
+  ],
+  "engines": {
+    "node": ">=16"
+  }
+}
+
